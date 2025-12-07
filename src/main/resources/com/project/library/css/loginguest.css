@@ -1,0 +1,41 @@
+#adminBtn {
+    -fx-background-color: #000000;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 10 0;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+#adminBtn:hover {
+    -fx-background-color: #FF8A00;
+    -fx-text-fill: white;
+}
+
+#adminBtn:pressed {
+    -fx-background-color: #e67a00;
+}
+
+#guestBtn {
+    -fx-background-color: #000000;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 10 0;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+#guestBtn:hover {
+    -fx-background-color: white;
+    -fx-text-fill: #000000;
+    -fx-border-radius: 8;
+    -fx-border-color: #000000;
+}
+
+#guestBtn:pressed {
+    -fx-background-color: #8a8a8a;
+}

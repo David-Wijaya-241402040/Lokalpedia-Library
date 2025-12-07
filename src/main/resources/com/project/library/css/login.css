@@ -1,0 +1,61 @@
+/* ===========================
+   INPUT DEFAULT (not focused)
+   =========================== */
+.text-field, .password-field {
+    -fx-background-color: white;
+    -fx-border-color: #c7c7c7; /* abu2 utk not focused */
+    -fx-border-width: 0 0 1 0; /* border bawah saja */
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4;
+}
+
+/* Placeholder color */
+.text-field .text-input,
+.password-field .text-input {
+    -fx-prompt-text-fill: #bdbdbd;
+}
+
+/* ===========================
+   FOCUSED STATE
+   =========================== */
+.text-field:focused, .password-field:focused {
+    -fx-background-color: #f2f2f2;   /* abu muda saat fokus */
+    -fx-border-color: #000000;       /* garis hitam saat fokus */
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Remove glow */
+.text-field:focused, .password-field:focused {
+    -fx-effect: none;
+}
+
+/* Placeholder hilang saat fokus */
+.text-field:focused .text-input,
+.password-field:focused .text-input {
+    -fx-prompt-text-fill: transparent;
+}
+
+/* LOGIN BUTTON DEFAULT */
+#loginBtn {
+    -fx-background-color: #000000;    /* HITAM */
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 10 0;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+/* HOVER → ORANGE */
+#loginBtn:hover {
+    -fx-background-color: #FF8A00;   /* ORANGE */
+    -fx-text-fill: white;
+}
+
+/* PRESSED (optional biar ada feedback klik) */
+#loginBtn:pressed {
+    -fx-background-color: #e67a00;   /* orange lebih gelap */
+}

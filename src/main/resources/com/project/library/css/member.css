@@ -1,0 +1,165 @@
+/* ============================
+   CURSOR HAND UNTUK SEMUA BUTTON DAN CLICKABLE
+   ============================ */
+.button:hover,
+.clickable:hover {
+    -fx-cursor: hand;
+}
+
+/* ============================
+   DEFAULT BUTTON STYLE (SEMUA HITAM PUTIH)
+   ============================ */
+.button {
+    -fx-background-color: #000000;  /* Hitam */
+    -fx-text-fill: white;           /* Putih */
+    -fx-background-radius: 6;
+}
+
+/* ============================
+   HOVER KHUSUS TIAP JENIS
+   ============================ */
+
+/* ADD = HIJAU */
+.add-btn:hover {
+    -fx-background-color: #34c759;
+}
+
+/* UPDATE (dua-duanya) = OREN */
+.update-btn:hover {
+    -fx-background-color: #ff9500;
+}
+
+/* DELETE = MERAH */
+.delete-btn:hover {
+    -fx-background-color: #ff3b30;
+}
+
+/* REFRESH = BIRU */
+.refresh-btn:hover {
+    -fx-background-color: #007aff;
+}
+
+/* ============================
+   GLOBAL TABLEVIEW STYLE
+   ============================ */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: black; /* orange */
+    -fx-border-width: 2;
+    -fx-padding: 0;
+    -fx-table-cell-border-color: #e0e0e0;
+}
+
+/* ============================
+   HEADER (COLUMN)
+   ============================ */
+.table-view .column-header-background {
+    -fx-background-color: #1a1a1a;  /* hitam */
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 0 8 0;
+}
+
+/* ============================
+   ROWS
+   ============================ */
+.table-row-cell {
+    -fx-cell-size: 34px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #202020;
+}
+
+/* Warna selang-seling */
+.table-row-cell:odd {
+    -fx-background-color: #f7f7f7;
+}
+
+.table-row-cell:even {
+    -fx-background-color: white;
+}
+
+/* Hover */
+.table-row-cell:hover {
+    -fx-background-color: #FFE4C2; /* oranye muda */
+}
+
+/* Selected row */
+.table-row-cell:selected {
+    -fx-background-color: #FF7A00 !important;
+    -fx-text-fill: white;
+}
+
+/* ============================
+   CELLS
+   ============================ */
+.table-cell {
+    -fx-padding: 6px 10px;
+    -fx-border-color: transparent;
+}
+
+/* biar text cell row ter-follow warna saat selected */
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: white;
+}
+
+/* =======================
+   SCROLLBAR FIX PROPER
+   ======================= */
+
+/* Hapus gaya bawaan */
+.table-view .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+/* Track */
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: #e5e5e5;  /* abu muda */
+    -fx-background-radius: 5px;
+}
+
+/* Thumb */
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #FF7A00; /* orange */
+    -fx-background-radius: 5px;
+}
+
+/* Tombol atas/bawah hilang biar modern */
+.table-view .scroll-bar:vertical .increment-arrow,
+.table-view .scroll-bar:vertical .decrement-arrow,
+.table-view .scroll-bar:vertical .increment-button,
+.table-view .scroll-bar:vertical .decrement-button {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-shape: "";
+}
+
+/* Horizontal scrollbar kalau ada */
+.table-view .scroll-bar:horizontal .track {
+    -fx-background-color: #e5e5e5;
+}
+
+.table-view .scroll-bar:horizontal .thumb {
+    -fx-background-color: #FF7A00;
+}
+
+/* Biar scrollbar nempel di pinggir, ga ada border putih aneh */
+.virtual-flow > .corner {
+    -fx-background-color: transparent;
+}
+
+
+/* ============================
+   TABLEVIEW FOCUS RING REMOVE
+   ============================ */
+.table-view:focused {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
